@@ -2,6 +2,7 @@
 import { supa } from "@/lib/supabase";
 import CommentBox from "@/components/CommentBox";
 import CommentList from "@/components/CommentList";
+import Link from "next/link";
 
 function sourceFromUrl(url?: string | null) {
   if (!url) return "Unknown source";
@@ -26,7 +27,7 @@ export default async function ArticlePage({ params }: { params: { id: string } }
 
   return (
     <main className="mx-auto max-w-3xl p-4">
-      <a href="/" className="text-sm underline opacity-80">← Back</a>
+      <Link href="/" className="text-sm underline opacity-80">← Back</Link>
 
       <h1 className="text-2xl font-bold mt-2">{article.title}</h1>
 
