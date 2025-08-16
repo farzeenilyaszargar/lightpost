@@ -17,3 +17,5 @@ export function supa(): SupabaseClient {
 // OPTIONAL: If you prefer names similar to earlier steps
 export const supabaseBrowser = supa;
 export const supabaseServer = supa;
+
+
